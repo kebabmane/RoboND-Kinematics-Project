@@ -99,6 +99,16 @@ The above gives us the outcome of the end effector in the frame by using forward
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
+Step 1 - Determine the DH Parameter table, see below
+
+![DH Param Table][image1]
+
+Step 2 - Determine the location of the WC relative to the base frame
+
+![inverse-kinematics][image3]
+
+The above image is from the Udacity Slack Channel 
+
 
 ### Project Implementation
 
