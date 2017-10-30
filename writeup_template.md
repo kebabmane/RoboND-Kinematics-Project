@@ -20,6 +20,7 @@
 [image1]: ./assets/DH_Params.png
 [image2]: ./assets/KUKA_Arm.png
 [image3]: ./assets/Joint_locations.png
+[image4]: ./assets/Inverse-kinematics.png
 
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
@@ -105,9 +106,10 @@ Step 1 - Determine the DH Parameter table, see below
 
 Step 2 - Determine the location of the WC relative to the base frame
 
-![inverse-kinematics][image3]
+![inverse-kinematics][image4]
 
 The above image is from the Udacity Slack Channel 
+
 
 
 ### Project Implementation
