@@ -117,33 +117,5 @@ The above image is from the Udacity Slack Channel
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
 
 
-Here I'll talk about the code, what techniques I used, what worked and why, where the implementation might fail and how I might improve it if I were going to pursue this project further.  
-
-First step is to define the DH param table (placeholder values)
-
-            # Define DH param symbols
-            d1, d2, d3, d4, d5, d6, d7 = symbols("d1:8")
-            a0, a1, a2, a3, a4, a5, a6 = symbols("a0:7")
-            alpha0, alpha1, alpha2, alpha3, alpha4, alpha5, alpha6 = symbols("alpha0:7")
-            q1, q2, q3, q4, q5, q6, q7 = symbols("q1:8")
-            
-Then define the joint able symbols (again 0 values)
-
-
-            # Joint angle symbols
-            theta1, theta2, theta3, theta4, theta5, theta6 = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-
-
-As explained in section 2 I then added in the DH params table that was derived and created the transformation matrices. Now we can turn our attention to the end effector (gripper) position.
-
-First step is to get the x, y and z position from inbound information (req)
-
-            px = req.poses[x].position.x
-            py = req.poses[x].position.y
-            pz = req.poses[x].position.z
-
-            (roll, pitch, yaw) = tf.transformations.euler_from_quaternion(
-                [req.poses[x].orientation.x, req.poses[x].orientation.y,
-                    req.poses[x].orientation.z, req.poses[x].orientation.w])
-
+I have commented the IK_server.py file with my implementation - please review
 
